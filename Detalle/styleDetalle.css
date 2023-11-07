@@ -1,0 +1,41 @@
+body{
+    background-color: #413d3e;
+}
+
+h1{
+    font-size: 4rem;
+    color: #e35513;
+}
+p{
+    color: white;
+}
+
+h2{
+    font-size: 2rem;
+    color: white;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(192, 0, 0, 0.719);
+    width: 800px;
+}
+
+button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #e35513;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin-left: 10px;
+}
+
+detalles-producto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
