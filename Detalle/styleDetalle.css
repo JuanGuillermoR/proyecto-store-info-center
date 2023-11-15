@@ -36,8 +36,12 @@ button{
 
 .contenedor-card-detalle{
     display: flex;
-    align-content: center;
     justify-content: center;
+}
+
+.description-detalle{
+    display: block;
+    margin: 20px;
 }
 
 detalles-producto{
