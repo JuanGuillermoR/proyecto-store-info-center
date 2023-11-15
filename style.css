@@ -3,68 +3,73 @@
 } */
 
 
-.header {
+/* .header {
     background-image: url("./assets/peakpx.jpg");
     height: 50vh;
+} */
+
+.img-ktm{
+  background-image: url("./assets/peakpx.jpg");
+  height: 50vh;
+  border-radius: 15px;
 }
 
 .contenedor-header {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 h2 {
-    margin: 0;
-    margin-left: 20px;
-    margin-top: 15px;
-    color: #fff;
-    font-size: 2rem;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .shop {
-    margin-left: 20px;
-    margin-top: 10px;
-    width: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 50px;
 }
 h1{
-    font-size: 14rem;
-    color: #e35513;
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
+  font-size: 14rem;
+  color: #e35513;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
 }
 html {
-    height: 100%;
-    width: 100%;
-  }
+  height: 100%;
+  width: 100%;
+}
 
 
 .contenedor{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card{
-margin: 5px;
-border: 1px solid #bbbb;
-padding: 36px;
-border-radius: 20px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-
+  margin: 5px;
+  border: 1px solid #bbbb;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contenedor-header button{
-border-radius: 8px;
-border: 1px solid transparent;
-padding: 0.6em 1.2em;
-font-size: 1em;
-font-weight: 500;
-font-family: inherit;
-background-color: #e35513;
-cursor: pointer;
-transition: border-color 0.25s;
-margin-left: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e35513;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 10px;
 }
 
 .card button{
@@ -94,12 +99,42 @@ margin-left: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-  h5{
-    color: red;
-    font-size: 1.5rem;
-  }
+h5{
+  color: red;
+  font-size: 1.5rem;
+}
 
 .card-img-top{
-    width: 300px;
-    border-radius: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.content-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-footer{
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+img{
+ width: 50px ; 
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  margin-bottom: 20px;
+}
+
+span{
+  display: flex;
+}
+
+.map{
+  margin: 20px;
 }
