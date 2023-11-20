@@ -9,18 +9,36 @@
     <link href="./login/styleLogin.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
     <section class="prueba">
         <div class="image-container">
-        <img src="./assets/peakpx (2).jpg" alt="">
+        <img src="../assets/peakpx (2).jpg" alt="">
         </div>
-    
+
         <div class="content-form">
-            
+            <header>
+                <div class="header">
+                    <div class="contenedor-header">
+                        <button>
+                            <a href="index.html">Inicio</a>
+                        </button>
+                        <button>
+                            <a href="#">Categorias</a>
+                        </button>
+                        <button>
+                            <a href="#">Sobre nosotros</a>
+                        </button>
+                        <a href="carritodecompra.html">
+                          <img class="shop" src="./assets/carro-de-la-compra.png">
+                        </a>
+                    </div>
+                </div>
+            </header>
             <div class="content-form-login">
                 <form id="formulario" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
                     <a href="index.html" class="logo-link">
                         <img src="./assets/logoKtm.png" alt="..." class="logo" />
-                        <span class="tooltip">Regresa a la página de inicio</span>
+                        <!-- <span class="tooltip">Regresa a la página de inicio</span> -->
                     </a>                    
                     <h1 id="ingresar">Crear Cuenta</h1>
                     <label class="form__label">Email</label>
@@ -28,9 +46,9 @@
                     <label class="form__label">Contraseña</label>
                     <input type="password" class="form__input" placeholder="********" formControlName="password">
                     <br>
-                    <button class="custom-button" type="submit" >Login</button>
+                    <button class="custom-button" type="submit" >Iniciar Sesión</button>
                     <br>
-                    <button class="custom-button" id="create-account-btn" (click)="onClick()">Create Account with Google</button>
+                    <button class="custom-button" id="create-account-btn" (click)="onClick()">Crear cuenta con google</button>
                     <a class="form__label__RecuperarContraseña" href="#">Recuperar contraseña</a>
                     <br>
                     <p class="text__p"><strong>No tienes cuenta?</strong><a href="/register"> Registrarse</a></p>

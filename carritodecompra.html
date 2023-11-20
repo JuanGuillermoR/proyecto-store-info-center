@@ -4,10 +4,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="carritodecompra.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <header>
+    <div class="header">
+        <div class="contenedor-header">
+            <button>
+              <a href="./index.html">Inicio</a>
+            </button>
+            <button>
+              <a href="login.html">Inicio Sesion</a>
+            </button>
+            <button>
+              <a href="#">Categorias</a>
+            </button>
+            <button>
+              <a href="#">Sobre nosotros</a>
+            </button>
+        </div>
+    </div>
+</header>
 
-  <h1>Carrito de Compras</h1>
+  <h1 class="title">Carrito de Compras</h1>
   <ul id="carritoLista"></ul>
   <button id="vaciarCarritoBtn">Vaciar carrito</button>
 
@@ -22,6 +41,10 @@
       // Obtén el botón de vaciar carrito
       const vaciarCarritoBtn = document.getElementById("vaciarCarritoBtn");
 
+      // Crea una imagen
+      const img = document.createElement('img');
+      img.src = '././assets/carrito-de-compras-vacio.png'; 
+
       if (carrito && carrito.length > 0) {
         // Recorre los productos en el carrito y muestra cada uno en la lista
         carrito.forEach((product) => {
@@ -31,6 +54,7 @@
         });
       } else {
         // Si el carrito está vacío, muestra un mensaje
+        document.body.appendChild(img); 
         carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
       }
 
