@@ -1,4 +1,6 @@
 <!-- Página del carrito de compras -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +9,7 @@
 
   <h1>Carrito de Compras</h1>
   <ul id="carritoLista"></ul>
+  <button id="vaciarCarritoBtn">Vaciar carrito</button>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -15,6 +18,9 @@
 
       // Obtén el elemento de la lista del carrito
       const carritoLista = document.getElementById("carritoLista");
+
+      // Obtén el botón de vaciar carrito
+      const vaciarCarritoBtn = document.getElementById("vaciarCarritoBtn");
 
       if (carrito && carrito.length > 0) {
         // Recorre los productos en el carrito y muestra cada uno en la lista
@@ -27,6 +33,15 @@
         // Si el carrito está vacío, muestra un mensaje
         carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
       }
+
+      // Agrega un evento click al botón de vaciar carrito
+      vaciarCarritoBtn.addEventListener("click", () => {
+        // Vacía el carrito en localStorage
+        localStorage.removeItem("carrito");
+
+        // Vacía la lista en la interfaz
+        carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
+      });
     });
   </script>
 </body>
