@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envia un mensaje</title>
+    <link rel="shortcut icon" href="../assets/logoKtm.ico" type="image/x-icon">
+    <link href="./mensaje/Style-email.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin: auto;">
+    <section class="prueba">
+        <div class="content-form">
+            <header>
+                <div class="header">
+                    <div class="contenedor-header">
+                        <a href="carritodecompra.html">
+                            <img class="shop" src="./assets/carro-de-la-compra.png">
+                        </a>
+                        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+                        <div class="menu">
+                          <button class="buttons"><a href="index.html">Inicio</a></button>
+                          <button class="buttons"><a href="login.html">Inicio Sesion</a></button>
+                        </div>
+                    </div>
+                </div>
+              </header>
+            <div class="content-form-login">
+                <div class="content-box-form">
+                    <form id="formulario" action="https://formsubmit.co/ruizalvarez2819@gmail.com" method="POST"> 
+
+                        <h1 id="ingresar">Mensaje</h1>
+
+                        <!-- <label class="form__label">Nombre</label>
+                        <input class="form__input" type="text" name="name"> -->
+
+                        <label class="form__label">Email</label>
+                        <input type="email" class="form__input" placeholder="Example@*******.com" name="email">
+
+                        <label class="form__label">Asunto</label>
+                        <input type="text" class="form__input" name="subject">
+
+                        <label class="form__label" for="comments">Comentarios</label>
+                        <textarea name="comments" class="form__input comentarios" cols="30" rows="10"></textarea>
+
+                        <br>
+                        <button class="custom-button" type="submit" value="Enviar">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body
+</html>
+
