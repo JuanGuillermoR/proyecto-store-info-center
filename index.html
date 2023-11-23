@@ -4,59 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/logoKtm.ico" type="image/x-icon">
-    <title>Tienda KTM</title>
+    <title>Tienda Virtual</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header >
-        <div class="header">
-            <div class="contenedor-header">
-              <a href="carritodecompra.html">
+  <header>
+    <div class="header">
+        <div class="contenedor-header">
+            <a href="carritodecompra.html">
                 <img class="shop" src="./assets/carro-de-la-compra.png">
-              </a>
-              <button>
-                <a href="index.html">Inicio</a>
-              </button>
-              <button>
-                <a href="login.html">Inicio Sesion</a>
-              </button>
-              <button>
-                <a href="#">Categorias</a>
-              </button>
-              <button>
-                <a href="#">Sobre nosotros</a>
-              </button>
+            </a>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+              <button class="buttons"><a href="index.html">Inicio</a></button>
+              <button class="buttons"><a href="login.html">Inicio Sesion</a></button>
+              <!-- <button class="buttons" ><a href="#">Categorias</a></button> -->
+              <select name="select" class="buttons">
+                <option value="value1">Travel</option>
+                <option value="value2">Enduro</option>
+                <option value="value3">Naked bike</option>
+                <option value="value4">Super Sport</option>
+                <option value="value5">Super Moto</option>
+                <option value="value6">MotoCross</option>
+              </select>
+              <button class="buttons" ><a href="#">Deja un mensaje</a></button>
             </div>
-            <H1>KTM</H1>
         </div>
-    </header>
+        <!-- <h1>KTM</h1> -->
+    </div>
+  </header>
     <section>
-      <div class="img-ktm"></div>
+      <div class="img-ktm">
+        <img src="./assets/peakpx.jpg" alt="" style="width: 100%;;">
+      </div>
+      <h1>Productos</h1>
       <div class="contenedor"></div>
     </section>
     <footer>
-      <div class="content-footer">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75473.26027489585!2d-75.56217003731656!3d6.187635416105858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429d370ef206d%3A0x901c2ad51be1ec9f!2sKtm%20R2r!5e0!3m2!1sen!2sco!4v1700019066749!5m2!1sen!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <h2>Contáctanos</h2>
         <div class="text-footer">
-          <span>Contáctanos</span>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/juan-guillermo-ruiz-alvarez-9733981b2/"><img src="./assets/linkedin.png" alt=""></a><span>Linkedin</span>
+          <ul style="display: flex;justify-content: center;">
+            <li style="margin-left: 20px;">
+              <a href="https://www.linkedin.com/in/juan-guillermo-ruiz-alvarez-9733981b2/"><img src="./assets/linkedin.png" alt=""></a>
+              <span>Linkedin</span>
             </li>
-            <li>
-              <a href="#"><img src="./assets/correo-electronico.png" alt=""></a><span>Email</span>
+            <li style="margin-left: 20px;">
+              <a href="mailto:ruizalvarez2819@gmail.com"><img src="./assets/correo-electronico.png" alt=""></a>
+              <span>Email</span>
             </li>
-            <li>
-              <a href="https://www.instagram.com/juan.gkr/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="./assets/instagram.png" alt=""></a><span>Instagram</span>
-            </li>
-            <li>
-              <span>Creado por Juan Guillermo Ruiz Alvarez</span>
+            <li style="margin-left: 20px;">
+              <a href="https://www.instagram.com/juan.gkr/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="./assets/instagram.png" alt=""></a>
+              <span>Instagram</span>
             </li>
           </ul>
+          <span>Creado por Juan Guillermo Ruiz Alvarez</span>
         </div>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75473.26027489585!2d-75.56217003731656!3d6.187635416105858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429d370ef206d%3A0x901c2ad51be1ec9f!2sKtm%20R2r!5e0!3m2!1sen!2sco!4v1700019066749!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
     </footer>
     <script>
         // Función para obtener datos de la API ficticia
@@ -87,7 +92,7 @@
                 <div class="card-body">
                   <h5 class="card-text">${product.title}</h5>
                   <span>Categoria:</span><h5 class="text-category">${product.category}</h5>
-                  <button>
+                  <button class="button">
                     <a href="detalleProducto.html?id=${product.id}" class="btn btn-primary">Ver Detalle</a>
                   </button>
                 </div>
@@ -97,8 +102,12 @@
     
           contenedor.innerHTML = productos;
         });
+
+        function toggleMenu() {
+            const menuBtn = document.querySelector('.menu-btn');
+            menuBtn.classList.toggle('active');
+        }
       </script>
 </div>
-
 </body>
 </html>

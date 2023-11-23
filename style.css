@@ -1,17 +1,5 @@
-/* body{
-    background-color: rgb(236, 236, 236);
-} */
-
-
-/* .header {
-    background-image: url("./assets/peakpx.jpg");
-    height: 50vh;
-} */
-
 .img-ktm{
-  background-image: url("./assets/peakpx.jpg");
-  height: 50vh;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .text-category{
@@ -21,19 +9,13 @@
 span{
   font-size: 1.2rem;
   font-family: cursive;
-
-}
-
-.contenedor-header {
-  display: flex;
-  text-align: center;
 }
 
 h2 {
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
   margin: 0;
-  margin-left: 20px;
-  margin-top: 15px;
-  color: #fff;
   font-size: 2rem;
 }
 
@@ -42,23 +24,26 @@ h2 {
   margin-top: 10px;
   width: 50px;
 }
+
 h1{
   font-size: 14rem;
   color: #e35513;
   display: flex;
-  margin-top: 10px;
+  font-family: emoji;
   justify-content: center;
 }
+
+
 html {
   height: 100%;
   width: 100%;
 }
 
-
 .contenedor{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 8px;
 }
 
 .card{
@@ -69,21 +54,7 @@ html {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contenedor-header button{
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #e35513;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  margin-left: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card button{
+.card .button{
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -97,19 +68,12 @@ html {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 } 
 
-.card button a{
+.card .button a{
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 } 
-
-.contenedor-header a{
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 h5{
   color: red;
@@ -132,7 +96,7 @@ h5{
 }
 
 img{
- width: 50px ; 
+  width: 50px ; 
 }
 
 ul{
@@ -145,8 +109,145 @@ li{
 
 span{
   display: flex;
+  justify-content: center;
 }
 
 .map{
   margin: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  padding: 15px;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2d2c66;;
+  position: fixed;
+  width: 100%;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-header .buttons{
+  color: white;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: red;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+} 
+
+.contenedor-header a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.shop {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e35513;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+}
+
+.menu-btn {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  h1{
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+      display: block;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+  .shop {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-color: white;
+  }
+
+  .contenedor-header {
+      flex-direction: flex;
+      align-items: flex-start;
+  }
+
+  .menu-btn.active + .menu {
+      display: flex;
+  }
+
+  .menu-btn.active {
+      background-color: #555;
+  }
+
+  button:not(.menu-btn) {
+      display: block;
+      margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu-btn {
+      display: none; 
+  }
+
+  .contenedor-header {
+      flex-direction: row;
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: row;
+  }
+
+  button:not(.menu-btn) {
+      display: block;
+      margin-top: 0;
+  }
 }
