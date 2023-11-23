@@ -1,105 +1,25 @@
-
-.content-form{
-    height: 100vh;
-    width: 100%;
-}
-
-.content-form-login{
-    height: 100vh;
+.content-h1{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #f0f0f0;  */
 }
 
-#ingresar{
+h1 {
     text-align: center;
-    font-family: none;
-    font-size: -webkit-xxx-large;
+    color: red;
+    font-size: 4em;
 }
-
-#formulario {
-    display: grid;
-    /* width: 30vh; */
-    font-size: x-large;
-}
-
-#formulario img {
-    width: 195px;
-}
-
-.form__input.comentarios{
-    width: 40vh;
-    height: 40vh;
-}
-
-.form__label{
-    font-family: none;
-}
-
-.form__input{
-    border: 3px solid rgb(176, 176, 212);
-    /* border: transparent; */
-    border-radius: 15px;
-    font-size: 1em;
-    background: transparent;
-    padding: 0 15px;
-    box-shadow: 0 0 10px rgb(176, 176, 212), 0 0 10px rgb(176, 176, 212);
-    color: rgb(18, 18, 20);
-    font-family: none;
-    height: 45px;
-}
-
-.form__input::placeholder{
-    color: black;
-}
-
-.custom-button {
-    background-color: #e35513;
-    color: white;
-    border: 3px solid  #e35513;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 15px;
-    font-family: none;
-}
-
-
-.custom-button:hover {
-    background-color: green;
-    border-color: green;
-}
-
-.text__p{
-    color: white;
-    font-size: large;
-    font-family: none;
-}
-
-.form__label__RecuperarContraseña{
-    color: white;
-    font-family: none;
-    font-size: large;
-    margin-top: 10px;
-    display: grid;
-    justify-content: flex-end;
-    text-decoration: none;
-    text-transform: none;
-}
-.form__label__RecuperarContraseña:visited {
-    color: black;
-}
-
-
-
-
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
+}
+
   
-  .header {
+.header {
     padding: 15px;
     color: red;
     display: flex;
@@ -168,30 +88,7 @@ body {
     cursor: pointer;
     display: none;
   }
-
-
-@media screen and (max-width: 375px) {
-  .content-box-form{
-    margin-top: 110px;
-  }
-
-  .form__input.comentarios{
-    width: 45vh;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-  .content-box-form{
-    margin-top: 110px;
-  }
-
-  .form__input.comentarios{
-    width: 45vh;
-  }
-
-}
-
+  
   @media screen and (max-width: 950px) {
     h1{
       font-size: 3.5rem;
