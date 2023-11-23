@@ -1,35 +1,65 @@
-<!-- Página del carrito de compras -->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/logoKtm.ico" type="image/x-icon">
+  <title>Carrito</title>
   <link href="carritodecompra.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
     <div class="header">
         <div class="contenedor-header">
-            <button>
-              <a href="./index.html">Inicio</a>
-            </button>
-            <button>
-              <a href="login.html">Inicio Sesion</a>
-            </button>
-            <button>
-              <a href="#">Categorias</a>
-            </button>
-            <button>
-              <a href="#">Sobre nosotros</a>
-            </button>
+            <a href="carritodecompra.html">
+                <img class="shop" src="./assets/carro-de-la-compra.png">
+            </a>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+              <button class="buttons"><a href="index.html">Inicio</a></button>
+              <button class="buttons"><a href="login.html">Inicio Sesion</a></button>
+              <!-- <button class="buttons" ><a href="#">Categorias</a></button> -->
+              <select name="select" class="buttons">
+                <option value="value1">Travel</option>
+                <option value="value2">Enduro</option>
+                <option value="value3">Naked bike</option>
+                <option value="value4">Super Sport</option>
+                <option value="value5">Super Moto</option>
+                <option value="value6">MotoCross</option>
+              </select>
+              <button class="buttons" ><a href="#">Deja un mensaje</a></button>
+            </div>
         </div>
+        <!-- <h1>KTM</h1> -->
     </div>
-</header>
-
-  <h1 class="title">Carrito de Compras</h1>
-  <ul id="carritoLista"></ul>
-  <button id="vaciarCarritoBtn">Vaciar carrito</button>
-
+  </header>
+  <section>
+    <h1 class="title">Carrito de Compras</h1>
+    <ul id="carritoLista"></ul>
+    <button id="vaciarCarritoBtn">Vaciar carrito</button>
+  </section>
+  <footer>
+    <!-- <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75473.26027489585!2d-75.56217003731656!3d6.187635416105858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429d370ef206d%3A0x901c2ad51be1ec9f!2sKtm%20R2r!5e0!3m2!1sen!2sco!4v1700019066749!5m2!1sen!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> -->
+    <h2>Contáctanos</h2>
+      <div class="text-footer">
+        <ul style="display: flex;justify-content: center;">
+          <li style="margin-left: 20px;">
+            <a href="https://www.linkedin.com/in/juan-guillermo-ruiz-alvarez-9733981b2/"><img src="./assets/linkedin.png" alt=""></a>
+            <span>Linkedin</span>
+          </li>
+          <li style="margin-left: 20px;">
+            <a href="mailto:ruizalvarez2819@gmail.com"><img src="./assets/correo-electronico.png" alt=""></a>
+            <span>Email</span>
+          </li>
+          <li style="margin-left: 20px;">
+            <a href="https://www.instagram.com/juan.gkr/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><img src="./assets/instagram.png" alt=""></a>
+            <span>Instagram</span>
+          </li>
+        </ul>
+      </div>
+  </footer>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       // Obtén el carrito desde localStorage
@@ -54,7 +84,7 @@
         });
       } else {
         // Si el carrito está vacío, muestra un mensaje
-        document.body.appendChild(img); 
+        // document.body.appendChild(img); 
         carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
       }
 
@@ -67,6 +97,11 @@
         carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
       });
     });
+
+    function toggleMenu() {
+      const menuBtn = document.querySelector('.menu-btn');
+      menuBtn.classList.toggle('active');
+    } 
   </script>
 </body>
 </html>
