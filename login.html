@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="shortcut icon" href="../assets/logoKtm.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logoKtm.ico" type="image/x-icon">
     <link href="./login/styleLogin.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body style="margin: auto;">
 
     <section class="prueba">
         <div class="image-container">
@@ -19,21 +19,27 @@
             <header>
                 <div class="header">
                     <div class="contenedor-header">
-                        <button>
-                            <a href="index.html">Inicio</a>
-                        </button>
-                        <button>
-                            <a href="#">Categorias</a>
-                        </button>
-                        <button>
-                            <a href="#">Sobre nosotros</a>
-                        </button>
                         <a href="carritodecompra.html">
-                          <img class="shop" src="./assets/carro-de-la-compra.png">
+                            <img class="shop" src="./assets/carro-de-la-compra.png">
                         </a>
+                        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+                        <div class="menu">
+                          <button class="buttons"><a href="index.html">Inicio</a></button>
+                          <button class="buttons"><a href="login.html">Inicio Sesion</a></button>
+                          <select name="select" class="buttons">
+                            <option value="value1">Travel</option>
+                            <option value="value2">Enduro</option>
+                            <option value="value3">Naked bike</option>
+                            <option value="value4">Super Sport</option>
+                            <option value="value5">Super Moto</option>
+                            <option value="value6">MotoCross</option>
+                          </select>
+                          <button class="buttons" ><a href="#">Deja un mensaje</a></button>
+                        </div>
                     </div>
+                    <!-- <h1>KTM</h1> -->
                 </div>
-            </header>
+              </header>
             <div class="content-form-login">
                 <form id="formulario" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
                     <a href="index.html" class="logo-link">
@@ -56,6 +62,12 @@
             </div>
         </div>
     </section>
-</body>
+    <script>
+        function toggleMenu() {
+            const menuBtn = document.querySelector('.menu-btn');
+            menuBtn.classList.toggle('active');   
+        }
+    </script>
+</body
 </html>
 
