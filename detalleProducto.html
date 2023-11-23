@@ -6,35 +6,40 @@
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="./assets/logoKtm.ico" type="image/x-icon">
   <title>Detalles del Producto</title>
-  <link href="./Detalle/styleDetalle.css" rel="stylesheet" type="text/css">
+  <link href="./Detalle/styleDetalle.css rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <header>
     <div class="header">
         <div class="contenedor-header">
-          <a href="carritodecompra.html">
-            <img class="shop" src="./assets/carro-de-la-compra.png">
-          </a>
-            <button>
-              <a href="index.html">Inicio</a>
-            </button>
-            <button>
-              <a href="login.html">Inicio Sesion</a>
-            </button>
-            <button>
-              <a href="#">Categorias</a>
-            </button>
-            <button>
-              <a href="#">Sobre nosotros</a>
-            </button>
+            <a href="carritodecompra.html">
+                <img class="shop" src="./assets/carro-de-la-compra.png">
+            </a>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+              <button class="buttons"><a href="index.html">Inicio</a></button>
+              <button class="buttons"><a href="login.html">Inicio Sesion</a></button>
+              <!-- <button class="buttons" ><a href="#">Categorias</a></button> -->
+              <select name="select" class="buttons">
+                <option value="value1">Travel</option>
+                <option value="value2">Enduro</option>
+                <option value="value3">Naked bike</option>
+                <option value="value4">Super Sport</option>
+                <option value="value5">Super Moto</option>
+                <option value="value6">MotoCross</option>
+              </select>
+              <button class="buttons" ><a href="#">Deja un mensaje</a></button>
+            </div>
         </div>
-        <h1>Detalles del Producto</h1>
+        <!-- <h1>KTM</h1> -->
     </div>
-</header>
+  </header>
   <div class="detalles-producto">
   </div>
-  <button id="agregarAlCarrito">Agregar al Carrito</button>
+  <div class="content-button">
+    <button id="agregarAlCarrito">Agregar al carro</button>
+  </div>
 
 
   <script>
@@ -100,6 +105,10 @@
       `;
     }
 
+    function toggleMenu() {
+      const menuBtn = document.querySelector('.menu-btn');
+      menuBtn.classList.toggle('active');       
+    }
   </script>
 </body>
 
