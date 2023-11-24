@@ -158,8 +158,9 @@ img {
 }
 
 #contenedor-mode{
-    padding: 0px 23px;
+    padding: 0px 643px 0px 0px;;
 }
+
 
 .header {
     padding: 15px;
@@ -242,6 +243,10 @@ button {
 }
 
 @media screen and (max-width: 1440px) {
+    #contenedor-mode{
+        padding: 0px 600px 0px 0px;
+    }
+
     .logo{
         display: none;
     }
@@ -320,6 +325,9 @@ button {
         font-size: x-large;
     }
 
+    #contenedor-mode{
+        padding: 0px 30px 0px 0px;
+    }
 }
 
 
@@ -338,6 +346,10 @@ button {
 
     .custom-button {
         width: 300px;
+    }
+
+    #contenedor-mode{
+        padding: 0px 30px 0px 0px;
     }
 }
 
@@ -361,5 +373,9 @@ button {
 
     .form__input::placeholder{
         font-size: large;
+    }
+
+    #contenedor-mode{
+        padding: 0px 30px 0px 0px;
     }
 }

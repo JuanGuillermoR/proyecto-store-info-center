@@ -1,101 +1,102 @@
 
 .content-form{
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .content-form-login{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #ingresar{
-    text-align: center;
-    font-family: none;
-    font-size: -webkit-xxx-large;
+  text-align: center;
+  font-family: none;
+  font-size: -webkit-xxx-large;
 }
 
 #formulario {
-    display: grid;
-    /* width: 30vh; */
-    font-size: x-large;
+  display: grid;
+  /* width: 30vh; */
+  font-size: x-large;
 }
 
 #formulario img {
-    width: 195px;
+  width: 195px;
 }
 
 .form__input.comentarios{
-    width: 40vh;
-    height: 40vh;
+  width: 40vh;
+  height: 40vh;
 }
 
 .form__label{
-    font-family: none;
+  font-family: none;
 }
 
 .form__input{
-    border: 3px solid rgb(176, 176, 212);
-    /* border: transparent; */
-    border-radius: 15px;
-    font-size: 1em;
-    background: transparent;
-    padding: 0 15px;
-    box-shadow: 0 0 10px rgb(176, 176, 212), 0 0 10px rgb(176, 176, 212);
-    color: rgb(18, 18, 20);
-    font-family: none;
-    height: 45px;
+  border: 3px solid rgb(176, 176, 212);
+  /* border: transparent; */
+  border-radius: 15px;
+  font-size: 1em;
+  background: transparent;
+  padding: 0 15px;
+  box-shadow: 0 0 10px rgb(176, 176, 212), 0 0 10px rgb(176, 176, 212);
+  color: rgb(18, 18, 20);
+  font-family: none;
+  height: 45px;
 }
 
 .form__input::placeholder{
-    color: black;
+  color: black;
 }
 
 .custom-button {
-    background-color: #e35513;
-    color: white;
-    border: 3px solid  #e35513;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 15px;
-    font-family: none;
+  background-color: #e35513;
+  color: white;
+  border: 3px solid  #e35513;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 15px;
+  font-family: none;
 }
 
 
 .custom-button:hover {
-    background-color: green;
-    border-color: green;
+  background-color: green;
+  border-color: green;
 }
 
 .text__p{
-    color: white;
-    font-size: large;
-    font-family: none;
+  color: white;
+  font-size: large;
+  font-family: none;
 }
 
 .form__label__RecuperarContraseña{
-    color: white;
-    font-family: none;
-    font-size: large;
-    margin-top: 10px;
-    display: grid;
-    justify-content: flex-end;
-    text-decoration: none;
-    text-transform: none;
+  color: white;
+  font-family: none;
+  font-size: large;
+  margin-top: 10px;
+  display: grid;
+  justify-content: flex-end;
+  text-decoration: none;
+  text-transform: none;
 }
 .form__label__RecuperarContraseña:visited {
-    color: black;
+  color: black;
 }
-
 
 .shop {
-  margin-left: 20px;
-  margin-top: 10px;
-  width: 50px;
+margin-left: 20px;
+margin-top: 10px;
+width: 50px;
 }
+
+
 
 body {
   margin: 0;
@@ -104,169 +105,171 @@ body {
 }
 
 .dark-mode {
-  background-color: #2e2d2cc9;
-  color: #fff;
+background-color: #2e2d2cc9;
+color: #fff;
 }
 
 #modeImage{
-  width: 40px;
-  height: 40px;
-  margin-top: 5px;
+width: 40px;
+height: 40px;
+margin-top: 5px;
 }
-  
+
 #contenedor-mode{
-  padding: 0px 23px;
+padding: 0px 30px 0px 0px;;
 }
-  .header {
-    padding: 15px;
-    color: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2e2d2c66;;
-    position: fixed;
-    width: 100%;
-  }
-  
-  .contenedor-header {
-    display: flex;
-    align-items: center;
-  }
-  
-  .contenedor-header .buttons{
-    color: white;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: red;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    margin-left: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  } 
-  
-  .contenedor-header a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .shop {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #e35513;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    margin-left: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .menu {
-    display: none;
-    flex-direction: column;
-  }
-  
-  .menu-btn {
-    font-size: 1.5em;
-    cursor: pointer;
-    display: none;
-  }
+
+
+.header {
+  padding: 15px;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2d2c66;;
+  position: fixed;
+  width: 100%;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-header .buttons{
+  color: white;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: red;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+} 
+
+.contenedor-header a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.shop {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e35513;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+}
+
+.menu-btn {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
 
 
 @media screen and (max-width: 375px) {
-  .content-box-form{
-    margin-top: 110px;
-  }
+.content-box-form{
+  margin-top: 110px;
+}
 
-  .form__input.comentarios{
-    width: 45vh;
-  }
+.form__input.comentarios{
+  width: 45vh;
+}
 
 }
 
 @media screen and (min-width: 1024px) {
-  .content-box-form{
-    margin-top: 110px;
-  }
+.content-box-form{
+  margin-top: 110px;
+}
 
-  .form__input.comentarios{
-    width: 45vh;
-  }
+.form__input.comentarios{
+  width: 45vh;
+}
 
 }
 
-  @media screen and (max-width: 950px) {
-    h1{
-      font-size: 3.5rem;
-    }
+@media screen and (max-width: 950px) {
+  h1{
+    font-size: 3.5rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .menu-btn {
-        display: block;
-    }
-  
-    h1{
-      font-size: 4rem;
-    }
-  
-    .shop {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-      border-color: white;
-    }
-  
-    .contenedor-header {
-        flex-direction: flex;
-        align-items: flex-start;
-    }
-  
-    .menu-btn.active + .menu {
-        display: flex;
-    }
-  
-    .menu-btn.active {
-        background-color: #555;
-    }
-  
-    button:not(.menu-btn) {
-        display: block;
-        margin-top: 5px;
-    }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+      display: block;
   }
-  
-  @media screen and (min-width: 769px) {
-    .menu-btn {
-        display: none; 
-    }
-  
-    .contenedor-header {
-        flex-direction: row;
-    }
-  
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-  
-    button:not(.menu-btn) {
-        display: block;
-        margin-top: 0;
-    }
+
+  h1{
+    font-size: 4rem;
   }
+
+  .shop {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-color: white;
+  }
+
+  .contenedor-header {
+      flex-direction: flex;
+      align-items: flex-start;
+  }
+
+  .menu-btn.active + .menu {
+      display: flex;
+  }
+
+  .menu-btn.active {
+      background-color: #555;
+  }
+
+  button:not(.menu-btn) {
+      display: block;
+      margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu-btn {
+      display: none; 
+  }
+
+  .contenedor-header {
+      flex-direction: row;
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: row;
+  }
+
+  button:not(.menu-btn) {
+      display: block;
+      margin-top: 0;
+  }
+}
