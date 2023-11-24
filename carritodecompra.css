@@ -158,7 +158,11 @@ span{
     height: 40px;
     margin-top: 5px;
 }
-  
+
+#contenedor-mode{
+    padding: 0px 23px;
+}
+
 footer{
     width: 100vw;
     position: absolute;

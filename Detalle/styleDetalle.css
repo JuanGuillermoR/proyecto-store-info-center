@@ -73,6 +73,10 @@ body {
     height: 40px;
     margin-top: 5px;
 }
+
+#contenedor-mode{
+    padding: 0px 23px;
+}
 .shop {
     margin-left: 20px;
     margin-top: 10px;

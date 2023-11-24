@@ -114,6 +114,9 @@ body {
   margin-top: 5px;
 }
   
+#contenedor-mode{
+  padding: 0px 23px;
+}
   .header {
     padding: 15px;
     color: red;
