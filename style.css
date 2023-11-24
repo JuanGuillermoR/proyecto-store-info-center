@@ -119,6 +119,18 @@ span{
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  transition: background-color 0.5s;
+}
+
+.dark-mode {
+  background-color: #2e2d2cc9;
+  color: #fff;
+}
+
+#modeImage{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
 }
 
 .header {

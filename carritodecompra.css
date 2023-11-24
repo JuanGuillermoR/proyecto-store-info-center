@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    transition: background-color 0.5s;
 }
 
 html {
@@ -147,6 +148,16 @@ span{
     justify-content: center;
 }
 
+.dark-mode {
+    background-color: #2e2d2cc9;
+    color: #fff;
+}
+  
+#modeImage{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
   
 footer{
     width: 100vw;

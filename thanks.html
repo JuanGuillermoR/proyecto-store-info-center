@@ -21,6 +21,9 @@
                     <button class="buttons"><a href="login.html">Inicio Sesion</a></button>
                     </div>
                 </div>
+                <div id="contenedor-mode">
+                    <img id="modeImage" src="./assets/media-luna.png" alt="Light Mode Image" onclick="toggleMode()">
+                </div>
             </div>
         </header>
         <div class="content-h1">
@@ -31,6 +34,17 @@
                 const menuBtn = document.querySelector('.menu-btn');
                 menuBtn.classList.toggle('active');   
             }
+
+            function toggleMode() {
+                const body = document.body;
+                const modeImage = document.getElementById("modeImage");
+
+                body.classList.toggle("dark-mode");
+
+                const isDarkMode = body.classList.contains("dark-mode");
+                modeImage.src = isDarkMode ? "././assets/brillo.png" : "././assets/media-luna.png";
+                modeImage.alt = isDarkMode ? "Dark Mode Image" : "Light Mode Image";
+            }      
         </script>
 </body>
 </html>
